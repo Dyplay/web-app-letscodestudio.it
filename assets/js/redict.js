@@ -1,1 +1,1 @@
-window.location.href = "/letscodestudio.it web app/view/";
+// window.location.href = "";
