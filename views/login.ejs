@@ -1,0 +1,23 @@
+<h1>Login</h1>
+<%= if (message.error) { %>
+    <%= message.error %>
+    <%= } %>
+ <form action="/login" method="post">
+<div>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+</div>
+<div>
+    <label for="Password">Password</label>
+    <input type="password" id="password" name="password" required>
+</div>
+<div id="error"></div>
+<button type="submit">Login</button>
+ </form>
+ <script>
+   if (message.error) {
+       document.getElementById('error').innerHTML = "Password oder die email ist ungültig"
+   }
+ </script>
+<a href="/register">regsiter</a>
+
